@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static String exibirDiaSemana(int numero) {
+        switch (numero) {
+            case 1:
+                return "Domingo";
+            case 2:
+                return "Segunda";
+            case 3:
+                return "Terça";
+            case 4:
+                return "Quarta";
+            case 5:
+                return "Quinta";
+            case 6:
+                return "Sexta";
+            case 7:
+                return "Sábado";
+            default:
+                return "Dia da semana inválido";
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite um número de 1 a 7: ");
+        int numero = sc.nextInt();
+
+        String dia = exibirDiaSemana(numero);
+        System.out.println(dia);
+
+        sc.close();
+    }
+}
