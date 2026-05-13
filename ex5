@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static int calcularFatorial(int numero) {
+        int fatorial = 1;
+
+        for (int i = 1; i <= numero; i++) {
+            fatorial = fatorial * i;
+        }
+
+        return fatorial;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite um número: ");
+        int numero = sc.nextInt();
+
+        int resultado = calcularFatorial(numero);
+        System.out.println("Fatorial de " + numero + " = " + resultado);
+
+        sc.close();
+    }
+}
